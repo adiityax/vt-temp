@@ -6,15 +6,8 @@ import * as AiIcons from "react-icons/ai";
 import { SidebarData } from "./SidebarData";
 import SubMenu from "./SubMenu";
 import { IconContext } from "react-icons/lib";
-
-const Nav = styled.div`
-background: #15171c;
-height: 80px;
-display: flex;
-justify-content: flex-start;
-align-items: center;
-width: 100%;
-`;
+import Navbar from "react-bootstrap";
+import Nav from "react-bootstrap";
 
 const NavIcon = styled(Link)`
 margin-left: 2rem;
@@ -50,11 +43,24 @@ const showSidebar = () => setSidebar(!sidebar);
 return (
 	<>
 	<IconContext.Provider value={{ color: "#fff" }}>
-		<Nav>
-		<NavIcon to="#">
-			<FaIcons.FaBars onClick={showSidebar} />
-		</NavIcon>
-		</Nav>
+		<div className="App container py-3">
+			<Navbar collapseOnSelect bg="dark" expand="md" className="mb-3">
+				<NavIcon to="#">
+					<FaIcons.FaBars onClick={showSidebar} />
+				</NavIcon>
+				<h1 style = {{color: "white",
+					 marginLeft: "20px",}}>
+					VTPC
+				</h1>
+				<Navbar.Toggle />
+				<Navbar.Collapse className="justify-content-end">
+					<Nav activeKey={window.location.pathname}>
+						<Nav.Link href="/login">Login</Nav.Link>
+						<img src = {image} alt = ''/>
+					</Nav>
+				</Navbar.Collapse>
+			</Navbar>
+		</div>
 		<SidebarNav sidebar={sidebar}>
 		<SidebarWrap>
 			<NavIcon to="#">
