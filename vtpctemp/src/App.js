@@ -1,5 +1,5 @@
 import './App.css';
-import { HomePage } from './components/HomePage';
+import HomePage from './components/HomePage';
 import React from 'react';
 import { Route, BrowserRouter as Router, Switch, } from 'react-router-dom';
 import {ExportAnalysisCom} from './pages/ExportAnalysisCom';
@@ -29,7 +29,7 @@ function App() {
             <Route path="/state-analytics" exact component={StateAnalytics} />
         </Switch>
         <Switch>
-        <Route path='/home' exact component={HomePage} />
+          <Route path='/home' exact component={HomePage} />
         </Switch>
         <Switch>
           <Route path='/vt-temp' exact component={LoginPage} />

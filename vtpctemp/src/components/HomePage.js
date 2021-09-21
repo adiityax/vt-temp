@@ -77,4 +77,4 @@ var secondDashboard =
   }
 }
 
-export { HomePage };
+export default HomePage;
