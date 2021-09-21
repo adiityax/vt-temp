@@ -26,7 +26,7 @@ function login()
 		{
 	alert('Thank You for Login & You are Redirecting to Home Page');
   //Redirecting to other page or webste code or you can set your own html page.
-       window.location.pathname = "/home";
+       window.location.pathname = "/";
 			}
 }
 	//Reset Inputfield code.
