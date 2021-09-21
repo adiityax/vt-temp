@@ -7,10 +7,10 @@ import { SidebarData } from "./SidebarData";
 import SubMenu from "./SubMenu";
 import "./Sidebar.css";
 import { IconContext } from "react-icons/lib";
-import Logo from '../img/Logo1.png';
+import Logo from '../img/Logo3.png';
 
 const Nav = styled.div`
-  background: #15171c;
+  background: white;
   height: 80px;
   display: flex;
   justify-content: flex-start;
@@ -27,7 +27,7 @@ align-items: center;
 `;
 
 const SidebarNav = styled.nav`
-background: #15171c;
+background: lightgrey;
 width: 250px;
 height: 100vh;
 display: flex;
@@ -50,18 +50,18 @@ const showSidebar = () => setSidebar(!sidebar);
 
 return (
 	<>
-	<IconContext.Provider value={{ color: "#fff" }}>
+	<IconContext.Provider value={{ color: "black" }}>
 		<Nav>
           <NavIcon to="#">
             <FaIcons.FaBars onClick={showSidebar} />
           </NavIcon>
           <h1
             style={{ marginLeft: "20px", 
-                     color: "white" }}
+                     color: "black" }}
           >
             VTPC
           </h1>
-		  <a href = '/' >
+		  <a href = '/home' >
 			<img src={Logo} className = 'logo-image'/>
 			</a>
         </Nav>

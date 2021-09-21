@@ -1,6 +1,32 @@
-.with-sidebar {
+.homepage {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     height: auto;
     width: auto;
+}
+
+.homepage-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+.homepage-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    margin: 10px;
+}
+
+.homepage-button {
+    background-color: #4682B4;
+    color: white;
+    height: 60px;
+    width: 200px;
+    margin: 1px;
 }
