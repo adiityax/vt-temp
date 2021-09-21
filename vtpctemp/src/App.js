@@ -29,7 +29,7 @@ function App() {
             <Route path="/state-analytics" exact component={StateAnalytics} />
         </Switch>
         <Switch>
-        <Route path='/home' exact component={HomePage} />
+        <Route path='/' exact component={HomePage} />
         </Switch>
         <Switch>
           <Route path='/vt-temp' exact component={LoginPage} />

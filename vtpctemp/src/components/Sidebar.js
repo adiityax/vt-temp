@@ -61,7 +61,7 @@ return (
           >
             VTPC
           </h1>
-		  <a href = '/home' >
+		  <a href = '/' >
 			<img src={Logo} className = 'logo-image'/>
 			</a>
         </Nav>
